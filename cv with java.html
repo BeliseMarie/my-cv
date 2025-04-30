@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My curriculum vitae</title>
+  <style>
+    body {
+      background-color: lightgrey;
+      margin: 0;
+      text-align: center;
+    }
+    .design {
+      display: flex;
+      margin-left: 15%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+    }
+    .info {
+      width: 40%;
+      background-color: lightskyblue;
+      padding: 10px;
+    }
+    .photo {
+      width: 100px;
+      height: 95px;
+      border: double;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 8px 10px;
+      z-index: -1;
+    }
+    hr {
+      background-color: rebeccapurple;
+      height: 2px;
+      border-style: none;
+      border-radius: 2px;
+    }
+    h3 {
+      text-align: left;
+      font-family: sans-serif;
+    }
+    ul {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><u>Curriculum Vitae</u></h1>
+  
+  <section class="design">
+    <div class="info">
+      <img src="belise.jpg.jpg" class="photo">
+      <h3><strong>Personal Information</strong></h3><hr>
+      <p>Firstname : Marie belise</p>
+      <p>Last name : Niyitanga</p>
+      <p>Telephone number : 0790101857</p>
+      <p>Email Address : belisemiyitanga@gmail.com</p>
+
+      <h3><strong>Personal detail</strong></h3><hr>
+      <p>Birth date: 20 April 2004</p>
+      <p>Nationality: Rwandan</p>
+      <p>Religion: Christian</p>
+      <p>Marital status: Single</p>
+      <p>Residence: Kigali</p>
+      <p>Gender: Female</p>
+
+      <button onclick="toggleSection('skills')">Toggle My Skills</button>
+      <div id="skills">
+        <h3><strong>My Skills</strong></h3><hr>
+        <p>Word</p>
+        <p>Excel</p>
+        <p>PowerPoint</p>
+        <p>MS Access</p>
+        <p>Information Technology</p>
+        <p>Handling Network Issues</p>
+      </div>
+
+      <h3><strong>More About Skills</strong></h3><hr>
+      <p>Apart from being a software developer, I am also experienced in Information Technology (IT) and networking administration.</p>
+
+      <h3><strong>Speaking Languages</strong></h3><hr>
+      <ul>
+        <li>Kinyarwanda</li>
+        <li>English</li>
+        <li>French</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3><strong>Education Background</strong></h3><hr>
+      <p>2024–2025: University at RP TUMBA</p>
+      <p>2020–2023: A'level at E.T.P Nyarurema</p>
+      <p>2017–2019: Ordinary Level at SOPEM</p>
+      <p>2010–2016: Primary School at G.S Rwebare</p>
+
+      <h3><strong>Work Experience</strong></h3><hr>
+      <p>Mar–Apr 2021: Internship in software development at Nova Ltd</p>
+      <p>Mar–Apr 2023: Internship in software development & IT at Nova Ltd</p>
+
+      <h3><strong>References</strong></h3><hr>
+      <p><strong>Headmaster:</strong> Mugisha Jean Bosco</p>
+      <p>TEL: 0788116753</p>
+      <p>Email: boscomugisha112@yahoo.com</p>
+
+      <p><strong>Secretary:</strong> Uwase Kellen</p>
+      <p>TEL: 0788881024</p>
+      <p>Email: kellenuwase12@gmail.com</p>
+
+      <h3><strong>Hobbies</strong></h3><hr>
+      <ul>
+        <li>Praying</li>
+        <li>Reading Books</li>
+        <li>Watching Movies</li>
+        <li>Playing Games</li>
+        <li>Scrolling Reels</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      if (section.style.display === 'none') {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    }
+
+    // Optional: Greeting based on time
+    window.onload = function () {
+      const hour = new Date().getHours();
+      let greeting;
+      if (hour < 12) greeting = "Good morning!";
+      else if (hour < 18) greeting = "Good afternoon!";
+      else greeting = "Good evening!";
+      alert(greeting + " Welcome to Marie Belise's CV!");
+    }
+  </script>
+</body>
+</html>
